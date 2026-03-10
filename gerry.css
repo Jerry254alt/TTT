@@ -1,0 +1,206 @@
+/* Reset some default browser styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0a2540;
+    padding:15px 40px;
+    color:white;
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+/* Navigation */
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white; /* corrected for better visibility */
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.hero a{
+    background:#00bfff;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.hero a:hover{
+    background:#008ecc;
+}
+
+/* Laptop Section */
+.Quality-laptops{
+    padding:50px 40px;
+    text-align:center;
+}
+
+.Quality-laptops h2{
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* Laptop Grid */
+.laptop-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive grid */
+    gap:30px;
+    margin-top:30px;
+}
+
+/* Laptop Card */
+.laptop-card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+    transition:transform 0.3s;
+}
+
+.laptop-card:hover{
+    transform:translateY(-5px);
+}
+
+.laptop-card img{
+    width:100%;
+    max-width:220px;   /* prevents images from being too large */
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+/* Laptop Text */
+.laptop-card h3{
+    margin:10px 0;
+}
+
+.laptop-card p{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* Button */
+.laptop-card button{
+    background:#0a2540;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.laptop-card button:hover{
+    background:#00bfff;
+}
+
+/* About Section */
+.about{
+    background:white;
+    padding:50px 40px;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:15px;
+}
+
+/* Contact Section */
+.contact{
+    padding:50px 40px;
+    background:#f4f6f9;
+    text-align:center;
+}
+
+.contact form{
+    margin-top:20px;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact textarea{
+    height:120px;
+}
+
+.contact button{
+    background:#0a2540;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    background:#00bfff;
+}
+
+/* Footer */
+footer{
+    background:#0a2540;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
